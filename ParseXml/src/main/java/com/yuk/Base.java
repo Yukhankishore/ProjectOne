@@ -21,24 +21,17 @@ public class Base extends HttpServlet {
 			res.sendRedirect("index.html");
 		}
 		else {
-		
-		String[] files = {"C:\\Users\\yukha\\eclipse-workspace\\ParseXml\\geodata.xml","C:\\Users\\yukha\\eclipse-workspace\\ParseXml\\salarydata.xml"};
-		
 //		ArrayList to store data fetched from XML files
 		List<User> contactList = new ArrayList<User>();
 		List<Salary> salaryList = new ArrayList<Salary>();
 		List<FullData> dataList = new ArrayList<FullData>();
 		
 //		Parsing XML file and add to the relevent list
+		String geoData =  "C:\\Users\\yukha\\eclipse-workspace\\ParseXml\\geodata.xml";
+		String salaryData = "C:\\Users\\yukha\\eclipse-workspace\\ParseXml\\salarydata.xml";
 		
-//		for(int i=0;i<files.length;i++) {
-////			PerformParse PerformParseObj = i+"";
-//			PerformParse PerformParseObj =  new PerformParse(files[i], contactList, salaryList, dataList);
-//			PerformParseObj.start();
-//		}
-		
-		PerformParse parserOne =  new PerformParse(files[0], contactList, salaryList, dataList);
-		PerformParse parserTwo =  new PerformParse(files[1], contactList, salaryList, dataList);
+		PerformParse parserOne =  new PerformParse(geoData, contactList, salaryList, dataList);
+		PerformParse parserTwo =  new PerformParse(salaryData, contactList, salaryList, dataList);
 		
 		parserOne.run();
 		parserTwo.run();
