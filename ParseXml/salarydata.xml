@@ -1,0 +1,10 @@
+<salarydata>
+ <person name="mat">
+       <salary>$3000</salary>
+       <pension>$500</pension>
+ </person>
+ <person name="tom">
+       <salary>$3500</salary>
+       <pension>$700</pension>
+ </person>
+</salarydata>

@@ -1,0 +1,10 @@
+<geodata>
+ <person name="tom">
+       <address>2344 States Drive, MA 01213, USA</address>
+       <phonenumber>333-222-2222</phonenumber>
+ </person>
+ <person name="mat">
+       <address>2345 Gates Drive, PA 11213, USA</address>
+       <phonenumber>444-222-2222</phonenumber>
+ </person>
+</geodata>
