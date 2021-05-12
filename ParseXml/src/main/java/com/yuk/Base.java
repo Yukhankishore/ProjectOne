@@ -33,8 +33,8 @@ public class Base extends HttpServlet {
 		PerformParse parserOne =  new PerformParse(geoData, contactList, salaryList, dataList);
 		PerformParse parserTwo =  new PerformParse(salaryData, contactList, salaryList, dataList);
 		
-		parserOne.run();
-		parserTwo.run();
+		parserOne.start();
+		parserTwo.start();
 			
 			try {
 				
@@ -57,7 +57,7 @@ public class Base extends HttpServlet {
 		
 //		Parser-Persondata XML and store it in dataList
 		PerformParse parserThree =  new PerformParse("persondata.xml", contactList, salaryList, dataList);
-		parserThree.run();
+		parserThree.start();
 		
 		try {
 			parserThree.join();
